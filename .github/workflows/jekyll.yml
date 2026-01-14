@@ -58,7 +58,7 @@ jobs:
             remote: /itss/home/openhard/public_html
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.PASSWORD }}
+            #password: ${{ secrets.PASSWORD }}
             privateKey: ${{ secrets.PRIVATE_KEY }}
 
   # Deployment job
