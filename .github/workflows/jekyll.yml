@@ -56,8 +56,9 @@ jobs:
         with:
             local: _site
             remote: /itss/home/openhard/public_html
-            host: oshe.io
-            username: openhard
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
             privateKey: ${{ secrets.PRIVATE_KEY }}
 
   # Deployment job
