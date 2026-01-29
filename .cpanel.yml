@@ -1,6 +1,9 @@
 ---
 deployment:
   tasks:
+    # Move into git repo
     - cd /itss/home/openhard/ruby/website_jekyll
+    # Activate ruby virtual environment
     - source /itss/home/openhard/rubyvenv/ruby/3.4/bin/activate
+    # Build the files in the repo using jekyll
     - /itss/home/openhard/rubyvenv/ruby/3.4/bin/jekyll build
