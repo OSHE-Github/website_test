@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - cd ${{ secrets.SITE_PATH }} && jekyll build
+    - cd /itss/home/openhard/ruby/website_jekyll && jekyll build
