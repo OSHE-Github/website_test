@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - cd ${{ secrets.SITE_PATH }} && jekyll build
