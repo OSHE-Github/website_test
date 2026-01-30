@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Get latest code
         uses: actions/checkout@v4
-      
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
