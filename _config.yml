@@ -4,7 +4,7 @@
 title: OSHE
 description: "Digital Home of the Open Source Hardware Enterprise"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/" #important: start with /
+baseurl: "" #important: start with /
 url: "https://oshe.io"
 
 # Build settings
