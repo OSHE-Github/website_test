@@ -1,14 +1,11 @@
----
 deployment:
   tasks:
     # Set path variables
     - export DEPLOYPATH=/itss/home/openhard/public_html
     - export RUBYVENVPATH=/itss/home/openhard/rubyvenv/ruby/3.4/bin/activate
-    # Move repo to path
-    - /bin/cp -R * $DEPLOYPATH
-    # Activate ruby virtual environment
+    # 1. Activate ruby virtual environment
     - source $RUBYVENVPATH
-    # Move into git repo
-    - cd $DEPLOYPATH
-    # Build the files in the repo using jekyll
+    # 2. Build the files right here in the cPanel repository folder
     - /itss/home/openhard/rubyvenv/ruby/3.4/bin/jekyll build
+    # 3. Copy ONLY the compiled static site into public_html
+    - /bin/cp -R _site/* $DEPLOYPATH
