@@ -2,7 +2,7 @@
 deployment:
   tasks:
     # Set path variables
-    - export DEPLOYPATH=/itss/home/openhard/ruby/website_jekyll
+    - export DEPLOYPATH=/itss/home/openhard/public_html
     - export RUBYVENVPATH=/itss/home/openhard/rubyvenv/ruby/3.4/bin/activate
     # Move repo to path
     - /bin/cp -R * $DEPLOYPATH
