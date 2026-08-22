@@ -6,9 +6,9 @@ deployment:
     - export RUBYVENVPATH=/itss/home/openhard/rubyvenv/ruby/3.4/bin/activate
     # Move repo to path
     - /bin/cp -R * $DEPLOYPATH
-    # Move into git repo
-    #- cd $DEPLOYPATH
     # Activate ruby virtual environment
-    #- source $RUBYVENVPATH
+    - source $RUBYVENVPATH
+    # Move into git repo
+    - cd $DEPLOYPATH
     # Build the files in the repo using jekyll
-    #- /itss/home/openhard/rubyvenv/ruby/3.4/bin/jekyll build
+    - /itss/home/openhard/rubyvenv/ruby/3.4/bin/jekyll build
