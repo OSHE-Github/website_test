@@ -1,0 +1,92 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: OSHE
+description: "Digital Home of the Open Source Hardware Enterprise"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "https://oshe.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#F5C734" #"#F70031"
+  primary_rgb: "245, 199, 52" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#ffffff" #"#33004D"
+  link: "#F5C734"
+  link_hover: "#ffcd00"
+  footer_heading: "#000000"
+  footer_content: "#000000"
+
+# Making projects separate from posts
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  questions:
+    output: true
+    permalink: /questions/:title/
+
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: linkedin
+    url: "https://www.linkedin.com/company/mtu-oshe?trk=public_post_feed-actor-name"
+  - title: facebook
+    url: "https://www.facebook.com/OpenSourceHardwareEnterprise/"
+  - title: twitter
+    url: "https://x.com/MTU_OpenSource"
+  - title: instagram
+    url: "https://www.instagram.com/mtu_oshe/"
+  - title: github
+    url: "https://github.com/OSHE-Github"
+
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - 1400 Townsend Dr
+    - Houghton, MI, 49931
+    - United States.
+email: oshe_help-l@mtu.com
+#tel: +34 8493-4893
+
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+
+# Members information. Shown on About page.
+members:
+  - name: Shane Oberloier
+    position: Faculty Advisor
+    text: "mmm pizza bagel"
+    img: oberloier.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:swoberlo@mtu.edu
+      - title: website
+        url: https://oberloier.com/
+
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: Miller Electric
+    img: Miller_Logo_4_Color.png
+  - name: Milwaukee Tool
+    img: Logo-Milwaukee.jpg
+  - name: General Motors
+    img: gm-logo.jpg
+  - name: Plexus
+    img: plexus.png
+  - name: Michigan Technological University
+    img: mtu.png
+
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Open Source Hardware specializes in building low-cost alternatives to expensive hardware/software, and then sharing the designs with the commons so that collaborative improvements can be made rapidly. Anyone can make changes or updates to the designs the Enterprise team creates—through this process, designs are improved at a much higher rate than would be possible within the Enterprise alone. Open source is all about collaboration."
+
+# Testimonial content. Shown on Home and About page.
+testimonial:
+    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    author: Marcel Newman
+    position: WEB DESIGNER - BLACKTIE.CO
